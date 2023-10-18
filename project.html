@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>AUDIO RECORDER</title>
+</head>
+<body>
+    <div class="audio recorder">
+    <h1>AUDIO RECORDER</h1>
+    <div class="bar">
+    <label for="media"> 
+		language you want to use: 
+	</label> 
+
+	<select id="media"> 
+		<option value="choose-an-option"> 
+			Choose an option 
+		</option> 
+		<option value="hindi">Hindi</option> 
+		<option value="English">English</option> 
+	</select> 
+</div>
+    
+    <textarea id="textarea" ></textarea>
+
+    <button type="button"  id="start-aud-recording" 
+    onclick="startRecording(this, 
+			document.getElementById('stop-aud-recording'))"> 
+    Start recording  <i class="fa fa-play"></i></button>
+
+
+    <button type="button" id="stop-aud-recording"  
+    disabled onclick="stopRecording(this, 
+			document.getElementById('start-aud-recording'))"> 
+			Stop recording <i class="fa fa-stop"></i></button>
+
+
+    <!-- <button id="download">download <i class="fa fa-download"></i></button> -->
+   </div>
+   <script src="pro.js"></script>
+</body>
+</html>
