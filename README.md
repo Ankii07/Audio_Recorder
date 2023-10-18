@@ -1,5 +1,5 @@
 # Audio_Recorder
-The project's key features include sharing, text-Area where you can
+The project's key features include text-Area where you can
 select the language in which you want to see the details and while reading the
 details you can record the audio and after recording done you can also download
 it on your own device.
